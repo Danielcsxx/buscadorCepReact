@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #121212;
+}
+
+.containerInput {
+    display: flex;
+    padding: 16px;
+    margin: 40px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.containerInput input {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #FFF;
+    outline: none;
+    margin-right: 8px;
+}
+
+.container input::placeholder {
+    color: #F1F1F1;
+}
+
+.buttonSearch {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonSearch:hover {
+    transform: scale(1.6);
+}
+
+.main {
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    font-size: 33px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.main h2 {
+    margin: 16px 0;
+    font-size: 39px;
+}
+
+.main span {
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .title a {
+        font-size: 44px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .main h2 {
+        font-size: 28px;
+    }
+
+    .main {
+        width: 84%;
+        min-height: 250px;
+        font-size: 26px;
+    }
+}
