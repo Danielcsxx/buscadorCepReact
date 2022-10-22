@@ -13,17 +13,17 @@ function App() {
 
   async function handleSearch() {
 
-    if (input === '') {
+    if(input === '') {
       toast.warning("CEP inválido.. tente novamente");
       return;
     } try {
       const response = await api.get(`${input}/json`);
       setCep(response.data);
       setInput("");
-      toast.success("Aqui está seu endereço :)")
+      toast.success("Aqui está seu endereço!")
 
     } catch {
-      toast.error("Ops.. Erro ao buscar cep :/");
+      toast.error("Ops.. Erro ao buscar cep.");
       setInput("");
     }
   }
