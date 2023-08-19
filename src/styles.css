@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
 .container {
     display: flex;
     height: 100vh;
@@ -9,8 +11,8 @@
 
 .containerInput {
     display: flex;
-    padding: 16px;
-    margin: 40px;
+    padding: 16px 0px 16px 14px;
+    width: 500px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
@@ -36,19 +38,19 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: transform 0.5s;
+    transition: transform 0.6s;
 }
 
 .buttonSearch:hover {
-    transform: scale(1.6);
+    transform: scale(1.4);
 }
 
 .main {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Neucha', cursive;
     display: flex;
     font-size: 33px;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     background-color: #fff;
     width: 500px;
@@ -56,18 +58,31 @@
 }
 
 .main h2 {
-    margin: 16px 0;
+    margin: 16px 16px;
     font-size: 39px;
 }
 
 .main span {
-    margin-bottom: 16px;
+    margin: 16px 16px;
     font-weight: bold;
 }
 
 @media (max-width: 600px) {
+    .title {
+        margin-top: 14px;
+    }
+
     .title a {
-        font-size: 33px;
+        letter-spacing: 2px;
+        font-size: 42px;
+    }
+
+    .containerInput input {
+        font-size: 18px;
+    }
+
+    .buttonSearch {
+        margin-right: 10px;
     }
 
     input {
@@ -75,12 +90,17 @@
     }
 
     .main h2 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    .containerInput {
+        width: 80%;
+        margin-bottom: 10px;
     }
 
     .main {
-        width: 84%;
+        width: 80%;
         min-height: 250px;
-        font-size: 26px;
+        font-size: 24px;
     }
 }
