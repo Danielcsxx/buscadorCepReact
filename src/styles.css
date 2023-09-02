@@ -24,7 +24,7 @@
     font-size: 20px;
     color: #FFF;
     outline: none;
-    margin-right: 8px;
+    margin-right: -8px;
 }
 
 .container input::placeholder {
